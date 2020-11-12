@@ -1,69 +1,77 @@
-Deck Options
-============
+Opções do Baralho
+===================
 
-Deck options are accessed by selecting a deck on the 'Decks' screen, and
-then clicking 'Options' at the bottom of the screen.
+As opções do baralho são acessadas selecionando o baralho na tela principal e
+clicando no botão "Opções" no canto inferior da tela.
 
-Anki allows you to share options between different decks, to make
-updating options in many decks at once easy. To do this, options are
-grouped into an 'options group'. By default, all newly created decks use
-the same options group, and decks imported from previous versions of
-Anki have separate option groups. If you’d like to alter the settings on
-one deck but not other decks, click the gears icon in the top right and
-add a new options group.
+O Anki permite que você compartilhe opções entre vários baralhos, para fazer com
+que o processo de atualizar opções de muitos baralhos ao mesmo tempo se torne
+uma tarefa mais fácil. Para fazer isso, opções são agrupadas em "grupo de
+opções". Por padrão, todos os baralhos recém criados usam o mesmo grupo de
+opções, e baralhos importados de versões antigas do Anki possuem grupo de opções
+separados. Se você deseja alterar as configurações de um baralho específico sem
+que afete outros, clique no ícone de engrenagem no canto direito e adicione um
+novo grupo de opções. O ícone de engrenagem pode ser encontrado na tela
+principal, do lado direito do nome do baralho que você deseja alterar. Para
+criar um novo grupo de opções, primeiro clique no ícone de engrenagem. Depois,
+em "Opções", e então no botão "Gerenciar…". Finalmente, clique no botão
+"Adicionar" para criar um novo grupo de opções.
+ 
+Por favor, mude apenas as opções que você de fato entende o que fazem, uma vez
+que ajustes inapropriados podem fazer com que o Anki se torne menos eficiente.
 
-Please only change options that you fully understand, as inappropriate
-adjustments may render Anki less effective.
+Opções não tem efeiro retroativo. Por exemplo, se você mudar uma opção que
+controla o intervalo depois que você errar um cartão, cartões que você errou
+antes dessa mudança ainda terão o intervalo antigo, e não o novo.
 
-Options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed prior to
-changing the option will have the old delay, not the new one.
+Cartões Novos
+-------------
 
-New Cards
----------
+**Passos** controla o número de repetições de aprendizagem, e o intervalo entre
+elas. Por favor, veja a seção [aprendizagem](studying.md#aprendizagem) para um
+resumo de como os passos de revisão funcionam.
 
-**Steps** controls the number of learning repetitions, and the delay
-between them. Please see the [learning](studying.md#learning) section for an
-overview of how the steps work.
+Passos maiores que um dia (1440 minutos) também são suportados - se você quiser,
+você pode definir um intervalo como 10 minutos, 1 dia, 3 dias, e finalmente 7
+dias antes de que o cartão seja considerado um cartão de revisão.
 
-Steps over a day (1440 minutes) are supported as well - if you want, you
-can define a schedule like 10 minutes, 1 day, 3 days and then finally 7
-days before the card becomes a review card.
+Se não houver mais nada para estudar, por padrão, o Anki mostrará
+antecipadamente cartões com um intervalo de até 20 minutos. Esse intervalo de 20
+minutos pode ser configurado em [preferências](preferences.md). Uma coisa a se
+estar atento é que, nesse caso, a contagem de cartões devidos será diferente
+entre a tela principal, que mostra todos os baralhos, e a tela de estudo de um
+baralho específico. Isso é feito para que você tenha uma visão de quais baralhos
+precisam de maior atenção.
 
-If there’s nothing else to study, Anki will show cards up to 20 minutes
-early by default. The amount of time to look ahead is configurable in
-the [preferences](preferences.md). One thing to be aware of is that the
-due counts will differ between the deck screen and study screens in this
-case. The deck screen will not count cards that are not ready, but the
-study screen will. This is done so that you can tell which decks need
-your attention.
+O Anki trata de uma forma diferente intervalos curtos e longos (aqueles que
+viram o dia). Em intervalos curtos, os cartões são mostrados tão logo o
+intervalo tenha passado, colocando-os à frente de outros cartões de revisão.
+Isso é feito para que você possa responder o cartão o mais próximo possível do
+intervalo agendado. Em contraste, cartões que viram o dia são agendados com base
+em um agendamento diário, assim como cartões de revisão são tratados. Quando
+você retornar para estudar no dia seguinte, a lista de cartões de aprendizagem
+diários não será mostrada primeiro, uma vez que isso pode fazer a primeira
+metade da seção de revisões consideravelmente difícil e frustrante. Eles são
+incluídos na contagem de revisões ao invés de na contagem de aprendizagem devido
+a forma que são lidados internamente pelo Anki.
 
-Anki treats small steps and steps that cross a day boundary differently.
-With small steps, the cards are shown as soon as the delay has passed,
-in preference to other waiting cards like reviews. This is done so that
-you can answer the card as closely to your requested delay as possible.
-In contrast, cards that cross a day boundary are scheduled on a per-day
-basis like reviews are. When you return to study the next day, the
-per-day learning cards will not be shown first, as that can make the
-first half of a review session frustratingly difficult. Instead, the
-cards will be shown after reviews are completed. They are included in
-the review count rather than the learning count, due to the way they are
-handled internally.
+**Ordem** controla como o Anki deve adicionar novos cartões aos baralhos: de
+forma aleatória ou ordenada. Quando você muda essa opção, o Anki irá reordenar
+os baralhos usando a nova opção de grupo. Uma observação quanto ao modo
+aleatório: se você revisar muitos dos seus cartões novos e então adicionar mais
+cartões novos, o material recém adicionado é estatisticamente mais provável de
+aparecer que os materiais adicionados anteriormente. Para corrigir isso, você
+pode mudar a ordem para o modo ordenado e retornar novamente para o modo
+aleatório. Dessa forma, você forçará que o Anki reordene (ou, nesse caso,
+reembaralhe) a lista de cartões novos.
 
-**Order** controls whether Anki should add new cards into the deck
-randomly, or in order. When you change this option, Anki will re-sort
-the decks using the current option group. One caveat with random order
-mode: if you review many of your new cards and then add more new cards,
-the newly added material is statistically more likely to appear than the
-previously remaining cards. To correct this, you can change the order to
-ordered mode and back again to force a re-sort.
-
-When you select random order, Anki will randomize your notes, keeping
-the cards of a given note close together. The cards of a given note are
-shown in the order their card types appear in, so that siblings are
-introduced consistently - otherwise you could end up in a state where
-some notes had all their cards introduced and other notes had only one
-or two. Please see the "bury related" option below for more info.
+Quando você seleciona a ordem aleatória, o Anki randomizará suas notas, mantendo
+os cartões de uma mesma nota agrupados. Os cartões de uma mesma nota são
+mostrados na ordem que seus tipos de cartão aparecem, de forma que cartões
+irmãos são introduzidos de forma consistente - caso contrário, você poderia
+acabar em um estado no qual algumas notas tiveram todos os seus cartões
+introduzidos e outras tiveram apenas um ou dois. Por favor, veja a opção
+"ocultar cartões relacionados" abaixo para mais informações.
 
 **New cards/day** tells Anki how many new cards you’d like introduced on
 each day you open the program. Missed days will not cause the cards to
