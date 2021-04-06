@@ -7,7 +7,7 @@
  - [Field Replacements](templates/fields.md)
  - [Card Generation](templates/generation.md)
  - [Styling & HTML](templates/styling.md)
-- [Preferences](preferences.md)
+- [Preferências](preferences.md)
 - [Deck Options](deck-options.md)
 - [Syncing with AnkiWeb](syncing.md)
 - [Profiles](profiles.md)

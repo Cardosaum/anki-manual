@@ -1,8 +1,8 @@
 Adicionando/Editando
-===============
+====================
 
 Adicionando Cartões e Notas
-----------------------
+---------------------------
 
 Lembre-se de que vimos na seção [Começando](getting-started.md) que no Anki nós
 adicionamos notas ao invés de cartões, e que ele mesmo se encarrega de adicionar
@@ -79,7 +79,7 @@ SuperMemo. Em particular:
     se tornará muito mais fácil.
 
 Adicionando um Tipo de Nota
-------------------
+---------------------------
 
 Embora os tipos básicos de notas sejam suficientes para cartões simples com
 apenas uma palavra ou frase em cada lado, assim que você se encontrar querendo
@@ -113,283 +113,293 @@ aqui - coisas como "Japonês", "Curiosidades", e assim por diante. Uma vez que
 tiver escolhido um nome, feche a janela Tipos de Notas, e você voltará à janela
 Adicionar.
 
-Customizing Fields
-------------------
-
-To customize fields, click the “Fields…​” button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
-
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter “1”.
-
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
-
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is 'not' where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
-
-**Editing Font** allows you to customize the font and size used when
-editing notes. This is useful if you want to make unimportant
-information smaller, or increase the size of foreign characters which
-are hard to read. The changes you make here do not affect how cards
-appear when reviewing: to do that, please see the
-[templates](templates/intro.md) section. If you have enabled the “type in the
-answer” function, however, the text you type will use the font size
-defined here. (For information about how to change the actual font face
-when typing the answer, please see the [checking your
-answer](templates/fields.md#checking-your-answer) section.)
-
-**Sort by this field…​** tells Anki to show this field in the Sort Field
-column of the browser. You can use this to sort cards by that field.
-Only one field can be the sort field at once.
-
-When **Remember last input…​** is checked, Anki will not clear out this
-field’s content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful.
-
-**Reverse text direction** is useful if you are studying languages that
-display text from right to left (RTL), such as Arabic or Hebrew. This
-setting currently only controls editing; to make sure the text displays
-correctly during review, you’ll need to adjust your
-[template](templates/styling.md).
-
-After you’ve added fields, you’ll probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
-
-Changing Deck / Note Type
--------------------------
-
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
-
-Using Decks Appropriately
--------------------------
-
-Decks are designed to divide your content up into broad categories that
-you wish to study separately, such as English, Geography, and so on. You
-may be tempted to create lots of little decks to keep your content
-organized, such as “my geography book chapter 1”, or “food verbs”, but
-this is not recommended, for the following reasons:
-
--   Lots of little decks mean you end up reviewing cards in a
-    recognizable order. Whether it’s because you’re clicking on each
-    deck in turn (which is slow) or you’ve added a number of decks under
-    a single parent deck, you’ll end up seeing all the “chapter 1” or
-    “food verb” cards together. This makes it easier to answer the
-    cards, as you can guess them from the context, which leads to weaker
-    memories. When you need to recall the word or phrase outside Anki,
-    you won’t have the luxury of being shown related content first!
-
--   Anki was not designed to handle many decks (more than several
-    dozen), and it will slow down as you add more – especially if you’re
-    studying on a mobile client. A few extra decks is not going to make
-    a noticeable difference, but if you have many decks the delays will
-    start to add up.
-
-Instead of creating lots of little decks, it’s a better idea to use tags
-and/or fields to classify your content. Instead of creating a “food
-verbs” decks for example, you could add those cards to your main
-language study deck, and tag the cards with “food” and “verb”. Each card
-can have multiple tags, which means you can do things like search for
-all verbs, or all food-related vocabulary, or all verbs that are related
-to food.
-
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as “book”, “page”, and so on. Anki
-supports searching in specific fields, which means you can do a search
-for “book:'my book' page:63” and immediately find what you’re looking
-for.
-
-Anki’s [custom study and filtered deck](filtered-decks.md) features make this
-especially powerful, as you can create temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck, and if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc), tags/fields and filtered decks are better.
+Personalizando Campos
+---------------------
+
+Para personalizar campos, clique no botão "Campos…" quando estiver na janela de
+Adicionar ou Editar uma nota. Você também pode fazê-lo abrindo a janela
+Gerenciar Tipos de Notas, escolher a nota que deseja editar e então clicar no
+botão "Campos…".
+
+Você pode adicionar, excluir, ou renomear campos clicando nos botões
+apropriados. Para mudar a ordem na qual os campos aparecem nessa janela de
+diálogo e também na janela de adicionar notas, você pode usar o botão
+"Reposicionar", que perguntará em qual posição você deseja que o campo
+selecionado esteja. Então, por exemplo, se você quiser que o campo selecionado
+seja o primeiro campo da nota, digite "1" e aperte OK.
+
+Não use 'Tags', 'Type', 'Deck', 'Card', ou 'FrontSide' como nome de campos, pois
+eles são [campos especiais](templates/fields.md#special-fields) e não
+funcionarão corretamente.
+
+As opções na parte inferior da janela permitem que você edite várias
+propriedades dos campos que serão usadas quando estiver adicionando ou editando
+cartões. Entretanto, este 'não' é o local que você usa para personalizar a
+aparência dos seus cartões quando estiver revisando. Para isso, por favor veja
+[modelos](templates/intro.md).
+
+**Fonte de Edição** permite que você customize a fonte e tamanho usados quando
+estiver editando notas. Isso é útil se você quiser colocar informações não tão
+importantes em um tamanho menor, ou se quiser aumentar o tamanho de caracteres
+estrangeiros que são difícies de ler. As mudanças que você fizer aqui não
+afetarão como os cartões aparecerão enquanto estiver revisando: para fazer isso,
+por favor veja a seção [modelos](templates/intro.md). Contudo, se você tiver
+habilitado a função de "escrever a resposta", o texto que você escrever usará
+sim o tamanho de fonte aqui especificado. (Para informações sobre como mudar a
+formatação de texto usada quando estiver escrevendo a resposta, por favor veja
+seção [checando a resposta](templates/fields.md#checking-your-answer).)
+
+**Classificar os cartões no Painel por este campo** diz ao Anki para mostrar
+este campo na coluna "Classificar Campo" do painel. Você pode usar isso para
+ordenar os cartões por campo. Somente um campo por vez pode ser usado para esta
+funcionalidade de classificação.
+
+Quando **Não apagar depois de adicionar** estiver selecionado, o Anki não
+apagará o conteúdo deste campo após a nota ser adicionada. Se você se pegar
+adicionando o mesmo conteúdo em várias notas repetidamente, talvez ache essa
+opção útil.
+
+**Direção do texto invertida** é útil se você estiver estudando idiomas que
+mostram o texto da direita para esquerda (sigla RTL, do inglês _Right to Left_),
+idiomas tais como o Árabe ou Hebraico encaixam-se nessa classificação. Essa
+opção atualmente controla apenas a janela de adição e edição de notas; para se
+certificar que o texto será mostrado de forma correta durante a revisão, você
+terá que ajustar seu [modelo de nota](templates/styling.md).
+
+Depois que você tiver adicionado os campos desejados, provavelmente vai querer
+adicioná-los à Frente ou Verso dos seus cartões. Para mais informações quanto a
+isso, por favor veja a seção [modelos](templates/intro.md).
+
+Mudando o Baralho / Tipo de Nota
+--------------------------------
+
+Enquanto estiver adicionando cartões, você pode clicar no botão localizado no
+canto superior esquerdo para mudar o tipo de nota, e no botão do canto superior
+direito para mudar o baralho. A janela que que abrirá não apenas permite que
+você selecione o baralho ou tipo de nota como também permite adicionar novos
+baralhos e gerenciar suas notas atuais.
+
+Usando Baralhos de forma apropriada
+-----------------------------------
+
+Os baralhos são projetados para dividir seu conteúdo em categorias amplas que
+você deseja estudar separadamente, tais como Inglês, Química, e assim por
+diante. Você pode ser tentado a criar muitos baralhos pequenos para manter seu
+conteúdo organizado, tais como "meu livro de biologia capítulo 1", ou "países da
+África", mas isto não é recomendado, pelas seguintes razões:
+
+-   Ter muitos "mini baralhos" significa que você acaba revisando
+    esses cartões em uma ordem previsível. Seja porque você seleciona
+    um baralho de cada vez (o que é lento), ou por que você adicionou
+    vários baralhos dentro de um único baralho pai, você acaba vendo
+    todos os cartões do "capítulo 1" ou "países da África" de uma
+    única vez. Isso torna mais fácil de responder os cartões, dado que
+    você pode adivinhá-los pelo contexto, o que resulta em memórias
+    mais fracas. Quando você precisar se lembrar de uma palavra ou
+    frase fora do Anki, você não terá o luxo de ser apresentado à
+    conteúdos relacionados antes!
+    
+-   O Anki não foi projetado para lidar com muitos baralhos (mais de
+    algumas dúzias), e ele vai acabar ficando lendo a medida que você
+    for adicionando mais - especialmente se você estiver estudando por
+    um aplicativo de celular. Uns poucos baralhos extra não farão uma
+    diferença perceptível, mas se você tiver muitos baralhos, o ataso
+    começará a se mostrar presente.
+
+Ao invés de criar vários pequenos baralhos, é uma ideia melhor usar etiquetas
+e/ou campos para classificar seu conteúdo. Por exemplo, ao invés de criar um
+baralho de "países da África", você poderia adicionar esses cartões ao seu
+baralho principal de geografia, e etiquetar os cartões com "países", "geografia"
+e "África". Cada cartão pode ter várias etiquetas, o que significa que você pode
+fazer coisas como procurar por todos os países do mundo, todos os conteúdos
+relacionados ao continente africano, ou ainda todos os países da África.
+
+Para aqueles que gostam de ser muito organizados, existe a possibilidade de
+adicionar campos às suas notas para classificar seu conteúdo, tal como "livro",
+"página", e assim por diante. o Anki permite fazer pesquisas em campos
+específicos, o que significa que você pode procurar por "livro:'meu livro'
+página:63" e imediatamente encontrar o que você estava querendo.
+
+As funcionalidades de [estudo personalizado e baralho
+filtrado](filtered-decks.md) do Anki fazem esse tipo de abordagem algo
+especialmente poderoso, uma vez que você pode criar um baralho temporário a
+partir de pesquisas como a que acabamos de mencionar. Isso permite que você
+revise todo seu conteúdo de uma forma misturada em um único baralho na maior
+parte do tempo (para otimizar a retenção de memória), mas também permite que
+você crie baralhos temporários quando precisar focar em um material em
+específico, tal como em situações pré-prova. A regra geral é que se você quer
+estudar um conteúdo sempre de forma separada, ele deve estar em um baralho só
+dele, e, se você precisa apenas ocasionalmente estudá-lo separadamente (para uma
+prova, caso esteja com matéria acumulada), etiquetas/campos e baralhos filtrados
+são um método melhor.
+
+Funcionalidades
+---------------
+
+O editor é mostrado quando estiver [adicionando notas](editing.md),
+[editando-as](studying.md) durante as revisões, ou [navegando pelo
+painel](browsing.md).
+
+No canto superior esquerdo existem dois botões, que abrem as janelas de
+[campos](editing.md#personalizando-campos) e [cartões](templates/intro.md).
+
+No canto direito estão os botões que controlam a formatação de texto. Negrito,
+itálico e sublinhado funcionam da mesma forma que em qualquer outro programa de
+processamento de texto. Os próximos dois botões permitem que você coloque o
+texto em superscrito ou subscrito, o que é útil para compostos químicos como
+H<sub>2</sub>O ou equações matemáticas simples como x<sup>2</sup>.
+
+O botão Fx remove qualquer formatação atualmente presente no texto selecionado.
+Isso inclui cores, negrito, etc.
+
+Os próximos dois botões permitem que você mude a cor do texto.
 
-Features
---------
+O botão \[…\] permite adicionar omissões de palavras. Note, entretanto, que para
+criar cartões que possuem essa funcionalidade, seu modelo de nota selecionado
+tem que estar configurado corretamente. Veja a seção de [omissão de
+palavras](editing.md#omissão-de-palavras) para mais informações.
+
+Você pode usar o botão com ícone de clipe de papel para selecionar áudios,
+imagens e vídeos do disco rígido do seu computador e adicionar às suas notas.
+Alternativamente, você pode copiar a mídia para a área de transferência (por
+exemplo, clicar com o botão direito em cima de uma imagem em um site da internet
+e escolher a opção 'Copiar Imagem') e colar esse conteúdo no campo que quiser.
+Para mais informações quanto a mídia, por favor veja a seção [mídia](media.md).
 
-The editor is shown when [adding notes](editing.md), [editing a
-note](studying.md) during reviews, or [browsing](browsing.md).
+O ícone de microfone permite que você grave áudio usando o microfone do seu
+computador e adicione-o à nota atual.
 
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
-[cards](templates/intro.md) windows.
+O último botão mostra funcionalidades mais avançadas, tais como editar o HTML
+que compõe um campo, e atalhos para adicionar MathJax ou [LaTeX](math.md) às
+suas notas.
 
-On the right are buttons that control formatting. Bold, italic and
-underline work like they do in a word processing program. The next two
-buttons allow you to subscript or superscript text, which is useful for
-chemical compounds like H<sub>2</sub>O or simple math equations like
-x<sup>2</sup>.
+A maioria dos botões possui atalhos de teclado. Você pode posicionar o cursor do
+mouse em cima de um botão para ver qual o atalho atrelado a ele.
 
-The Fx button clears any formatting in the currently selected text. This
-includes colours, bold, etc.
+Quando você colar textos, o Anki irá, por padrão, remover a maior parte da
+formatação. Porém, caso pressione a tecla shift enquanto cola, o Anki preservará
+mais da formatação do texto original.
 
-The next two buttons allow you to change text colour.
+Omissão de Palavras
+-------------------
 
-The \[…​\] button is visible when a cloze note type is selected.
+'Omissão de palavras' é o processo de ocultar uma ou mais palavras em uma
+sentença. Por exemplo, se você tivesse a seguinte sentença:
 
-You can use the paperclip button to select audio, images and videos from
-your computer’s hard drive to attach to your notes. Alternatively, you
-can copy the media onto your computer’s clipboard (for instance, by
-right-clicking an image on the web and choosing 'Copy Image') and paste
-it into the field that you want to place it in. For more information
-about media, please see the [media](media.md) section.
+    Brasília foi fundada em 21 de Abril de 1960.
 
-The microphone icon allows you to record from your computer’s microphone
-and attach the recording to the note.
+…e omitisse o ano em que Brasília foi fundada, então sua sentença ficaria:
 
-The last button shows more advanced features, such as editing the
-underlying HTML of a field, and shortcuts to add MathJax or
-[LaTeX](math.md) to your notes.
+    Brasília foi fundada em 21 de Abril de [...].
+    
+Para mais informações sobre o porquê de se usar omissões de palavras, veja a
+regra número 5 [aqui (em
+Inglês)](http://www.supermemo.com/articles/20rules.htm).
 
-Most of the buttons have shortcut keys. You can hover the mouse cursor
-over a button to see its shortcut.
+Para facilitar, o Anki já vêm por padrão com um tipo especial de nota que
+permite omitir palavras no formato acima mencionado. Para criar uma nota usando
+omissão de palavras, selecione o tipo de nota "Omissão de Palavras", e digite
+algum texto no campo chamado "Texto". Após isso, use o mouse para selecionar a
+parte do texto que você deseja ocultar, selecione-o e então clique no botão
+\[…​\]. O Anki irá substituir o texto usando este formato:
 
-When pasting text, Anki will strip most formatting by default. If you
-hold down the shift key while pasting, Anki will preserve more
-formatting.
+    Brasília foi fundada em 21 de Abril de {{c1::1960}}.
+    
+A parte "c1" significa que você criou uma omissão de palavras. Você pode criar
+mais de uma se desejar. Por exemplo, se você selecionar Brasília e clicar no
+botão \[…​\] novamente, o texto agora ficará:
 
-Cloze Deletion
---------------
+    {{c2::Brasília}} foi fundada em 21 de Abril de {{c1::1960}}.
 
-'Cloze deletion' is the process of hiding one or more words in a
-sentence. For example, if you have the sentence:
+Quando você adicionar a nota acima, o Anki irá criar dois cartões. O primeiro
+cartão irá mostrar:
 
-    Canberra was founded in 1913.
+    Brasília foi fundada em 21 de Abril de [...].
+    
+…na pergunta, e mostrará a frase completa na resposta. O outro cartão terá a
+seguinte pergunta:
 
-…​and you create a cloze deletion on “1913”, then the sentence would
-become:
+    [...] foi fundada em 21 de Abril de 1960.
 
-    Canberra was founded in [...].
+Também é possível ocultar múltiplas partes da frase no mesmo cartão. No exemplo
+acima, se você mudar "c2" por "c1", somente um cartão será criado, com ambos os
+textos "Brasília" e "1960" ocultos. Caso você pressione a tecla "Alt" ("Option"
+no Mac) enquanto estiver criando uma omissão de palavras, o Anki automaticamente
+usará o mesmo número ao invés de incrementá-lo.
 
-Sometimes sections that have been removed in this fashion are said to be
-'occluded'.
+Omissões de palavra não precisam abranger a totalidade de uma palavra. Então, se
+você selecionar "rasília" ao invés de "Brasília" no exemplo acima, a pergunta
+aparecerá como "B\[…\] foi fundada em 21 de Abril de 1960", dando a você uma dica.
 
-For more information on why you might want to use cloze deletion, see
-rule number 5 [here](http://www.supermemo.com/articles/20rules.htm).
+Você também pode pode mostrar dicas que não correspondem exatamente ao texto. Se
+você trocar a sentença original por:
 
-Anki provides a special cloze deletion type of note, to make creating
-clozes easy. To create a cloze deletion note, select the Cloze note
-type, and type some text into the "Text" field. Then drag the mouse over
-the text you want to hide to select it, and click the \[…​\] button.
-Anki will replace the text with:
+    Brasília::A capital do Brasil foi fundada em 21 de Abril de 1960.
+    
+…e então pressionar \[…\] após selecionar "Brasília::A capital do Brasil", o
+Anki irá tratar o texto após os dois pontos duplos como uma dica, mudando o
+texto para:
 
-    Canberra was founded in {{c1::1913}}.
+    {{c1::Brasília::A capital do Brasil}} foi fundada em 21 de Abril de 1960.
 
-The “c1” part means that you’ve created one cloze deletion on the
-sentence. You can create more than one deletion if you’d like. For
-example, if you select Canberra and click \[…​\] again, the text will
-now look like:
+Quando o cartão aparecer para revisão, o texto aparecerá como:
 
-    {{c2::Canberra}} was founded in {{c1::1913}}.
+    [A capital do Brasil] foi fundada em 21 de Abril de 1960.
 
-When you add the above note, Anki will create two cards. The first card
-will show:
+Para informações sobre como testar sua habilidade de digitar omissões de
+palavras corretamente, por favor veja a seção [digitando respostas](templates/fields.md#checking-your-answer).
 
-    Canberra was founded in [...].
+Por favor, note que sobrepor omissões de palavras é um recursos não suportado.
+Por exemplo, o seguinte campo é inválido:
 
-…​on the question, with the full sentence on the answer. The other card
-will have the following on the question:
+    {{c1:Brasília foi fundada em 21 de {{c2::Abril}} de {{c3::1960}}}}.
 
-    [...] was founded in 1913.
+Se você deseja criar omissões de palavaras de textos que se sobrepõe, adicione
+um outro campo de texto ao seu [tipo de nota](templates/intro.md), e, quando
+estiver criando as notas, cole o texto em dois campos separados, algo semelhante
+a:
 
-You can also elide multiple sections on the same card. In the above
-example, if you change c2 to c1, only one card would be created, with
-both Canberra and 1913 hidden. If you hold down alt (option on a Mac)
-while creating a cloze, Anki will automatically use the same number
-instead of incrementing it.
+    Campo de Texto1: {{c1::Brasília foi fundada}} em 21 de Abril de 1960
+    Campo de Texto2: {{c2::Brasília}} foi fundada em 21 de Abril de 1960
 
-Cloze deletions don’t need to fall on word boundaries, so if you select
-“anberra” rather than “Canberra” in the above example, the question
-would appear as “C\[…​\] was founded in 1913”, giving you a hint.
+O tipo de nota omissão de palavras padrão possui um segundo campo chamado Extra,
+que é mostrado no verso de cada cartao. Ele pode ser usado para adicionar
+informações adicionais, por exemplo.
 
-You can also give yourself hints that don’t match the text. If you
-replace the original sentence with:
+O tipo de nota omissão de palavras é tratado de forma especial pelo Anki, e não
+pode ser criado com base em um tipo de nota comum. Se você deseja
+personalizá-lo, por favor se certifique de clonar o tipo de nota já existente
+"omissão de palavras" ao invés dos outros tipos de notas disponíveis.
 
-    Canberra::city was founded in 1913
+Inserindo Caracteres Extrangeiros e Acentos
+-------------------------------------------
 
-…​and then press \[…​\] after selecting "Canberra::city", Anki will
-treat the text after the two colons as a hint, changing the text into:
+Todos os computadores modernos possuem suporte nativo para inserção de acentos e
+caracteres extrangeiros, e múltiplas formas de fazê-lo. O método que recomendamos
+é usar o layout de teclado para o idioma que você deseja aprender.
 
-    {{c1::Canberra::city}} was founded in 1913
+Idiomas com caracteres diferentes como o Japonês, Chinês, Tailandês, e outros
+possuem o seu próprio layout específico para essa linguagem.
 
-When the card comes up for review, it will appear as:
+Idiomas europeus que usam acentos podem ter o seu próprio layout, mas podem
+geralmente ser digitados usando um layout de "teclado internacional".
 
-    [city] was founded in 1913.
+Para adicionar um layout de teclado internacional em computadores Windows, por
+favor veja <https://support.microsoft.com/en-au/kb/306560>.
 
-For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
+Para adicionar em um Mac OS X, por favor veja
+<http://www.macworld.com/article/1147039/os-x/accentinput.html>.
 
-Please note that overlapping clozes are not supported. For example, the
-following field is invalid:
+Layouts de teclado para um idioma específico são adicionados de uma maneira
+semelhante, mas não temos condição de listar todos aqui. Para mais informações,
+por favor tente pesquisar por "digitar em Japonês no Mac", "digitar em Chinês no
+Windows 10", e assim por diante.
 
-    {{c1::Canberra was {{c2::founded}}}} in 1913
+Se você está aprendendo um idioma que se escreve da direita para a esquerda,
+existem várias outras questões a se considerar. Por favor, veja [esta página (em
+inglês)](http://dotancohen.com/howto/rtl_right_to_left.html) para mais informações.
 
-If you need to create clozes from overlapping text, add another Text
-field to your cloze, add it to the [template](templates/intro.md), and then when
-creating notes, paste the text into two separate fields, like so:
-
-    Text1 field: {{c1::Canberra was founded}} in 1913
-
-    Text2 field: {{c2::Canberra}} was founded in 1913
-
-The default cloze note type has a second field called Extra, that is
-shown on the answer side of each card. It can be used for adding some
-usage notes or extra information.
-
-The cloze note type is treated specially by Anki, and cannot be created
-based on a regular note type. If you wish to customize it, please make
-sure to clone the existing Cloze type instead of another type of note.
-Things like formatting can be customized, but it is not possible to add
-extra card templates to the cloze note type.
-
-
-Inputting Foreign Characters and Accents
-----------------------------------------
-
-All modern computers have built in support for typing accents and
-foreign characters, and multiple ways to go about it. The method we
-recommend is using a keyboard layout for the language you want to learn.
-
-Languages with a separate script like Japanese, Chinese, Thai and so on
-have their own layouts specifically for that language.
-
-European languages that use accents may have their own layout, but can
-often by typed on a generic "international keyboard" layout. These work
-by typing the accent, then the character you want accented - eg an
-apostrophe (') then the letter a (a) gives á.
-
-To add the international keyboard on Windows machines, please see
-<https://support.microsoft.com/en-au/kb/306560>
-
-To add it on Macs, please see
-<http://www.macworld.com/article/1147039/os-x/accentinput.html>
-
-Keyboards for a specific language are added in a similar way, but we can
-not cover them all here. For more information, please try searching
-Google for "input Japanese on a mac", "type Chinese on Windows 10", and
-so on.
-
-If you’re learning a right to left language, there are lots of other
-things to consider. Please see [this
-page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
-information.
-
-The toolkit Anki is built on has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on Mac
-OS X, and typing characters by holding down the alt key and typing a
-numeric code on Windows.
+O toolkit que o Anki usa possue dificuldade em lidar com alguns métodos de
+inserção de caracteres, tais como pressionar teclas para selecionar caracteres
+com acento no Mac OS X, ou pressionar a tecla "Alt" e digitar um código
+numérico no Windows.
