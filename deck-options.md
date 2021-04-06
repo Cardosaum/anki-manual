@@ -134,54 +134,58 @@ entre responder um cartão como 'Bom' ou 'Fácil'. Por exemplo, com a configura�
 padrão de 130%, 'Fácil' resultará em um intervalo que é 1.3 vezes o intervalo de
 se responder o cartão como 'Bom'.
 
-**Interval modifier** allows you to apply a multiplication factor to the
-intervals Anki generates. At its default of 100% it does nothing; if you
-set it to 80% for example, intervals will be generated at 80% of their
-normal size (so a 10 day interval would become 8 days). You can thus use
-the multiplier to make Anki present cards more or less frequently than
-it would otherwise, trading study time for retention or vice versa.
+**Modificador de intervalo** permite que você aplique um fator multiplicativo
+aos intervalos gerados pelo Anki. No seu valor padrão de 100% ele não tem nenhum
+efeito; Agora, se você mudá-lo para 80%, por exemplo, os intervalos serão
+gerados com 80% do tamanho normal (então, um intervalo de 10 dias se tornaria 8
+dias). Você pode, portanto, usar esse multiplicador para fazer o Anki mostrar
+cartões com maior ou menor frequência do que mostraria normalmente, fazendo,
+dessa forma, uma troca entre tempo de estudo por retenção ou vice versa.
 
-For moderately difficult material, the average user should find they
-remember approximately 90% of mature cards that come up for review. You
-can find out your own performance by opening the graphs/statistics for a
-deck and looking at the Answer Buttons graph - mature retention is the
-correct% on the right side of the graph. If you haven’t been studying
-long you may not have any mature cards yet. As performance with new
-cards and younger cards can vary considerably, it’s a good idea to wait
-until you have a reasonable amount of mature reviews before you start
-drawing conclusions about your retention rate.
+Para materiais com uma dificuldade moderada, o usuário médio deve se encontrar
+relembrando aproximadamente 90% dos cartões maduros que são mostrados na
+revisão. Você pode descobrir sua própria performance abrindo os
+gráficos/estatísticas para um baralho e olhando o gráfico de Botões de
+Resposta - a retenção de cartões maduros é o correto% no lado direito do
+gráfico. Caso você não tenha estudado por tempo o suficiente, talvez você não
+tenha nenhum cartão maduro ainda. Dado que a performance com os cartões novos e
+jovens pode variar consideravelmente, é uma boa ideia esperar até que você tenha
+uma quantidade significativa de revisões maduras antes de começar a tirar
+conclusões sobre sua taxa de retenção.
 
-On the SuperMemo website, they suggest that you can find an appropriate
-multiplier for a desired retention rate. Their formula boils down to:
+No site do SuperMemo, eles sugerem que você encontre um multiplicador apropriado
+para uma taxa de retenção desejada. A fórmula deles se resume a:
 
-    log(desired retention%) / log(current retention%)
+    log(retenção desejada%) / log(retenção atual%)
 
-Imagine we have a current retention rate of 85% and we want to increase
-it to 90%. We’d calculate the modifier as:
+Imagine que nós temos uma retenção atual com taxa de 85% e queremos aumentá-la
+para 90%. Dessa forma, calcularíamos o modificador como:
 
     log(90%) / log(85%) = 0.65
 
-You can use Google to [calculate
-it](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)) for you.
+Você pode usar o Google para [calcular o
+modificador](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)) para
+você.
 
-If you plug the resulting 65% into the interval modifier, you should
-find over time that your retention moves closer to your desired
-retention.
+Se você colocar o valor resultante de 65% no campo de modificador de intervalo,
+você deverá observar ao longo do tempo que sua retenção se aproxima da retenção
+anteriormetne desejada.
 
-One important thing to note however is that the tradeoff between time
-spent studying and retention is not linear: we can see here that to
-increase our retention by 5 percentage points, we’d have to study 35%
-more frequently. If the material you are learning is very important then
-it may be worth the extra effort – that’s something you’ll need to
-decide for yourself. If you’re simply worried that you’re forgetting too
-much, you may find investing more time into the initial learning stage
-and/or making mnemonics gives you more gain for less effort.
+É importante notar, entretanto, que o balanço entre o tempo gasto estudando e a
+retenção não é uma correlação linear: podemos ver aqui que para aumentar nossa
+retenção em 5 pontos percentuais, nós precisamos estudar 35% mais. Se o material
+que você está aprendendo é muito importante então pode ser que valha o esforço
+extra - isso é algo que você terá que decidir por si próprio. Se você está
+simplesmente preocupado com o fato de que está esquecendo muito, talvez você
+descubra que investir mais tempo no estágio inicial de aprendizagem e/ou fazer
+mnemônicos podem dar um retorno melhor por um esforço menor.
 
-One final thing to note is that Anki forces a new interval to be at
-least 1 day longer than it was previously so that you don’t get stuck
-reviewing with the same interval forever. If your goal is to repeat a
-card once a day for multiple days, you can do that by setting more
-learning mode steps instead of by adjusting this modifier.
+Uma última coisa a se notar é que o Anki força o novo intervalo a ser pelo menos
+1 dia mais longo que o anterior, dessa forma você não fica preso revisando um
+cartão com o mesmo intervalo para sempre. Se seu objetivo é repetir um cartão
+uma vez por dia por múltiplos dias, você pode fazê-lo adicionando mais
+intervalos de aprendizagem ao invés de tentar conseguí-lo ajustando esse
+modificador.
 
 **Maximum interval** allows you to place an upper limit on the time Anki
 will wait to reshow a card. The default is 100 years; you can decrease
